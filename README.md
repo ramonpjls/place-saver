@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+### Descripción del proyecto
+Esta aplicación web permite a los usuarios marcar y guardar lugares en un mapa interactivo utilizando la librería Mapbox GL JS y su integración con React. Los usuarios pueden agregar nuevos marcadores, ver los detalles de cada lugar y eliminarlos si es necesario.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Tecnologías utilizadas
+* **React:** Framework de JavaScript para construir interfaces de usuario.
+* **Mapbox GL JS:** Librería de JavaScript para crear mapas interactivos.
+* **Mapbox GL React:** Componente de React que encapsula Mapbox GL JS para una fácil integración.
+* **[Otras tecnologías utilizadas, como un gestor de estado (Redux, Zustand), una base de datos (MongoDB), etc.]**
 
-## Available Scripts
+### Instalación
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+   ```
+2. **Instalar dependencias:**
+   ```bash
+   cd tu-repositorio
+   npm install
+   ```
 
-In the project directory, you can run:
+### Ejecución
+1. **Iniciar el servidor de desarrollo:**
+   ```bash
+   npm start
+   ```
+   La aplicación se ejecutará en http://localhost:3000.
 
-### `npm start`
+### Características principales
+* **Mapa interactivo:** Los usuarios pueden hacer zoom, panoramizar y buscar lugares en el mapa.
+* **Agregar marcadores:** Los usuarios pueden hacer clic en el mapa para agregar nuevos marcadores y personalizarlos con un título y una descripción.
+* **Ver detalles:** Al hacer clic en un marcador, se muestra una ventana emergente con los detalles del lugar.
+* **Eliminar marcadores:** Los usuarios pueden eliminar marcadores que ya no sean necesarios.
+* **[Otras características, como búsqueda de lugares cercanos, filtros, etc.]**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Estructura del proyecto
+```
+tu-repositorio/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Map.js
+│   │   ├── Marker.js
+│   │   └── Popup.js
+│   ├── App.js
+│   ├── index.css
+│   └── index.js
+├── package.json
+└── README.md
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Contribuciones
+Las contribuciones son bienvenidas. Por favor, abre un issue para discutir nuevas características o mejoras.
 
-### `npm test`
+### Licencia
+Este proyecto está bajo la licencia [Nombre de la licencia].
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Personaliza este archivo:**
+* **Reemplaza los marcadores de posición:** Cambia `tu-usuario` y `tu-repositorio` por los valores correctos.
+* **Añade detalles específicos:** Describe en detalle las características de tu aplicación, la estructura de tu proyecto y cualquier otra información relevante.
+* **Incluye capturas de pantalla:** Agrega capturas de pantalla para mostrar la interfaz de usuario de tu aplicación.
+* **Agrega instrucciones de desarrollo:** Si es necesario, proporciona instrucciones más detalladas sobre cómo desarrollar la aplicación, como configurar variables de entorno o utilizar herramientas específicas.
 
-### `npm run build`
+**Considera agregar secciones adicionales:**
+* **Arquitectura:** Explica la arquitectura de tu aplicación, incluyendo los componentes principales y cómo interactúan entre sí.
+* **Testing:** Describe cómo se realizan las pruebas unitarias e integradas.
+* **Deployment:** Explica cómo se despliega la aplicación en un entorno de producción.
+* **Contribuyendo:** Proporciona pautas detalladas para que otros desarrolladores contribuyan al proyecto.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Ejemplos de secciones adicionales:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Arquitectura
+La aplicación utiliza un enfoque basado en componentes, donde cada componente se encarga de una parte específica de la interfaz de usuario. El componente principal `Map.js` renderiza el mapa de Mapbox, mientras que los componentes `Marker.js` y `Popup.js` se encargan de representar los marcadores y las ventanas emergentes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Testing
+Se utilizan pruebas unitarias con Jest para garantizar la corrección de los componentes individuales. Las pruebas de integración se realizan manualmente para verificar el funcionamiento completo de la aplicación.
 
-### `npm run eject`
+**Este es solo un ejemplo, puedes personalizarlo aún más para que se adapte a tus necesidades específicas.**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Herramientas útiles para generar el README:**
+* **Generadores de README:** Existen herramientas en línea y extensiones de editor de código que pueden ayudarte a generar un README estructurado y personalizado.
+* **Markdown preview:** Utiliza un editor de código con vista previa de Markdown para ver cómo se verá tu README antes de confirmar los cambios.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
