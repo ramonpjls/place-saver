@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // Hook para manejar los lugares y sincronizar con localStorage
 const HandlePlaces = (initialPlaces = []) => {
@@ -14,18 +16,20 @@ const HandlePlaces = (initialPlaces = []) => {
     }, [places]);
 
     const addPlace = (newPlace) => {
-        console.log(newPlace)
         setPlaces([...places, newPlace]);
+        toast.success('Lugar guardado');
     };
 
     const updatePlace = (updatedPlace) => {
         setPlaces(places.map((place) =>
             place.id === updatedPlace.id ? updatedPlace : place
         ));
+        toast.info('Lugar actualizado');
     };
 
     const deletePlace = (placeId) => {
         setPlaces(places.filter((place) => place.id !== placeId));
+        toast.error('Lugar eliminado');
     };
 
     return {

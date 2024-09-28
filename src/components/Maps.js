@@ -8,6 +8,8 @@ import { useLocalStorage } from '@uidotdev/usehooks';
 import Pin from './pin';
 import { MdDelete } from 'react-icons/md';
 import { SiGooglemaps } from 'react-icons/si';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const apiKey = process.env.REACT_APP_MAPBOX_API_TOKEN;
@@ -107,13 +109,14 @@ const MapboxComponent = () => {
                         longitude={Number(popupInfo?.coordinates[0])}
                         latitude={Number(popupInfo?.coordinates[1])}
                         onClose={() => setPopupInfo(null)}
+
                     >
-                        <div className='flex flex-col gap-4'>
-                            <span className='font-bold text-md'>{popupInfo.name}</span>
-                            <spna className="te">{popupInfo.description}</spna>
+                        <div className='flex flex-col gap-4 m-2'>
+                            <span className='text-lg font-bold'>{popupInfo.name}</span>
+                            <span className="text-sm">{popupInfo.description}</span>
                             <div className='flex justify-between'>
-                                <MdDelete className='text-[20px] text-red-600' onClick={() => handleDelete(popupInfo)} />
-                                <SiGooglemaps className='text-[20px] text-orange-400' onClick={() => handleShare(popupInfo)} />
+                                <MdDelete title="Delete" className='text-[30px] text-red-600 hover:border-2 hover:border-red-600 hover:rounded-full hover:shadow-lg' onClick={() => handleDelete(popupInfo)} />
+                                <SiGooglemaps title='share on Google Maps' className='text-[30px] text-orange-400 hover:border-2 hover:border-orange-400 hover:rounded-full hover:shadow-lg' onClick={() => handleShare(popupInfo)} />
                             </div>
                         </div>
                     </Popup>
@@ -128,6 +131,7 @@ const MapboxComponent = () => {
                 onUpdate={updatePlace}
                 onDelete={deletePlace}
             />
+            <ToastContainer />
         </div >
     );
 };
