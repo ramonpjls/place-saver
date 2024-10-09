@@ -52,32 +52,4 @@ tu-repositorio/
 ### Contribuciones
 Las contribuciones son bienvenidas. Por favor, abre un issue para discutir nuevas características o mejoras.
 
-### Licencia
-Este proyecto está bajo la licencia [Nombre de la licencia].
-
-**Personaliza este archivo:**
-* **Reemplaza los marcadores de posición:** Cambia `tu-usuario` y `tu-repositorio` por los valores correctos.
-* **Añade detalles específicos:** Describe en detalle las características de tu aplicación, la estructura de tu proyecto y cualquier otra información relevante.
-* **Incluye capturas de pantalla:** Agrega capturas de pantalla para mostrar la interfaz de usuario de tu aplicación.
-* **Agrega instrucciones de desarrollo:** Si es necesario, proporciona instrucciones más detalladas sobre cómo desarrollar la aplicación, como configurar variables de entorno o utilizar herramientas específicas.
-
-**Considera agregar secciones adicionales:**
-* **Arquitectura:** Explica la arquitectura de tu aplicación, incluyendo los componentes principales y cómo interactúan entre sí.
-* **Testing:** Describe cómo se realizan las pruebas unitarias e integradas.
-* **Deployment:** Explica cómo se despliega la aplicación en un entorno de producción.
-* **Contribuyendo:** Proporciona pautas detalladas para que otros desarrolladores contribuyan al proyecto.
-
-**Ejemplos de secciones adicionales:**
-
-#### Arquitectura
-La aplicación utiliza un enfoque basado en componentes, donde cada componente se encarga de una parte específica de la interfaz de usuario. El componente principal `Map.js` renderiza el mapa de Mapbox, mientras que los componentes `Marker.js` y `Popup.js` se encargan de representar los marcadores y las ventanas emergentes.
-
-#### Testing
-Se utilizan pruebas unitarias con Jest para garantizar la corrección de los componentes individuales. Las pruebas de integración se realizan manualmente para verificar el funcionamiento completo de la aplicación.
-
-**Este es solo un ejemplo, puedes personalizarlo aún más para que se adapte a tus necesidades específicas.**
-
-**Herramientas útiles para generar el README:**
-* **Generadores de README:** Existen herramientas en línea y extensiones de editor de código que pueden ayudarte a generar un README estructurado y personalizado.
-* **Markdown preview:** Utiliza un editor de código con vista previa de Markdown para ver cómo se verá tu README antes de confirmar los cambios.
 
